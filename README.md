@@ -10,8 +10,6 @@ $ git clone https://github.com/D-A-0431/Employee-Management.git
 ```
 Set up your web server or use a local development environment to run the project.
 
-Open the project in your preferred web browser.
-
 ```
 cd server
 node index.js
