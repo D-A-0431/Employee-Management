@@ -21,7 +21,7 @@ index.html
 
 - Form Validation: Ensure data accuracy and prevent incorrect entries through client-side form validation.
 
-- Create: Add new employees to the database with their details.
+- Create: Add new employees with their details.
 
 - Read: View the list of existing employees with their information.
 
