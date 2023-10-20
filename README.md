@@ -12,6 +12,12 @@ Set up your web server or use a local development environment to run the project
 
 Open the project in your preferred web browser.
 
+```
+cd server
+node index.js
+index.html
+```
+
 ## Features
 - Employee Records: Store employee details such as Name, EMP Id, Salary, and City.
 
