@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CRUD
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <div class="container">
+            <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <div>
+                                <label>Full Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                                <input type="text" name="fullName" id="fullName">
+                            </div>
+                            <div>
+                                <label>EMP Code</label><label class="validation-error hide" id="EMPValidationError">This field is required.(Only Numbers)</label>
+                                <input type="text" name="empCode" id="empCode">
+                            </div>
+                            <div>
+                                <label>Salary</label><label class="validation-error hide" id="SalaryValidationError">This field is required.(Only Numbers)</label>
+                                <input type="text" name="salary" id="salary">
+                            </div>
+                            <div>
+                                <label>City</label><label class="validation-error hide" id="CityValidationError">This field is required.(Only Alphabets)</label>
+                                <input type="text" name="city" id="city">
+                            </div>
+                            <button id="btnSubmit" class="btn">Submit</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="container">
+            <table class="list" id="employeeList">
+                <thead>
+                    <tr>
+                        <th>SL/No</th>
+                        <th>Full Name</th>
+                        <th>EMP Code</th>
+                        <th>Salary</th>
+                        <th>City</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    
+    <!-- <script src="script.js"></script> -->
+    <script src="localDB.js"></script>
+</body>
+
+</html>
