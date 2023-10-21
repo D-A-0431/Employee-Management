@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="login-form">
+        <input id="login-email" name="email" placeholder="Email" required>
+        <input type="password" id="login-password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <h1 hidden>Signup</h1>
+    <form id="signup-form" hidden>
+        <input id="signup-email" name="email" placeholder="Email" required>
+        <input type="password" id="signup-password" name="password" placeholder="Password" required>
+        <button type="submit">Signup</button>
+    </form>
+
+    <div id="error-message">Incorrect email or password. Please try again.</div>
+        
+    <div class="signup">Not yet member? <a href="Signup.html">Signup now</a></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
