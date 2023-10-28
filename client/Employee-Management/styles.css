@@ -16,7 +16,7 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-color);
     overflow: scroll;
-
+    background-image: url("./images/1.png");
 }
 
 .container {

@@ -24,6 +24,7 @@ btn.addEventListener("click", function () {
     employeeList.push(employee);
     localStorage.setItem("employeeList", JSON.stringify(employeeList));
     displayEmployees(); // display the updated list
+    resetForm();
   }
 });
 
@@ -41,6 +42,14 @@ function displayEmployees() {
             </tr>`;
   }
   tableBody.innerHTML = rows;
+}
+
+function resetForm() {
+  document.getElementById("fullName").value = "";
+  document.getElementById("empCode").value = "";
+  document.getElementById("salary").value = "";
+  document.getElementById("city").value = "";
+  selectedRow = null;
 }
 
 function deleteEmployee(index) {
@@ -63,6 +72,10 @@ function validate() {
   var salaryInput = document.getElementById("salary").value;
   var EMPInput = document.getElementById("empCode").value;
   var cityInput = document.getElementById("city").value;
+  document.getElementById("fullNameValidationError").classList.add("hide");
+  document.getElementById("SalaryValidationError").classList.add("hide");
+  document.getElementById("EMPValidationError").classList.add("hide");
+  document.getElementById("CityValidationError").classList.add("hide");
   if (name == "" || name.length >= 20) {
     isValid = false;
     document.getElementById("fullNameValidationError").classList.remove("hide");
