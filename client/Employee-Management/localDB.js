@@ -90,10 +90,6 @@ function validate() {
     document.getElementById("CityValidationError").classList.remove("hide");
   } else {
     isValid = true;
-    document.getElementById("fullNameValidationError").classList.add("hide");
-    document.getElementById("SalaryValidationError").classList.add("hide");
-    document.getElementById("EMPValidationError").classList.add("hide");
-    document.getElementById("CityValidationError").classList.add("hide");
   }
   return isValid;
 }
