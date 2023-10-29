@@ -72,6 +72,10 @@ function validate() {
   var salaryInput = document.getElementById("salary").value;
   var EMPInput = document.getElementById("empCode").value;
   var cityInput = document.getElementById("city").value;
+  document.getElementById("fullNameValidationError").classList.add("hide");
+  document.getElementById("SalaryValidationError").classList.add("hide");
+  document.getElementById("EMPValidationError").classList.add("hide");
+  document.getElementById("CityValidationError").classList.add("hide");
   if (name == "" || name.length >= 20) {
     isValid = false;
     document.getElementById("fullNameValidationError").classList.remove("hide");
@@ -86,6 +90,10 @@ function validate() {
     document.getElementById("CityValidationError").classList.remove("hide");
   } else {
     isValid = true;
+    document.getElementById("fullNameValidationError").classList.add("hide");
+    document.getElementById("SalaryValidationError").classList.add("hide");
+    document.getElementById("EMPValidationError").classList.add("hide");
+    document.getElementById("CityValidationError").classList.add("hide");
   }
   return isValid;
 }
